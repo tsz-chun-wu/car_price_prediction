@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Mileage (km)</h2>
+    <input class="area"  type="text" id="mileage" class="floatLabel" name="uiMileage" value="10000">
+  <h2>Production year</h2>
+  <input class="area"  type="text" id="prod_year" class="floatLabel" name="uiProdYear" value="2010">
+	<h2>Engine volumn</h2>
+  <input class="area"  type="text" id="engine_vol" class="floatLabel" name="uiEngineVol" value="3.5">
+  <h2>Cylinder</h2>
+  <input class="area"  type="text" id="cylinder" class="floatLabel" name="uiCylinder" value="6">
+  <h2>No. of airbags</h2>
+  <input class="area"  type="text" id="airbags" class="floatLabel" name="uiAirbags" value="12">
+	<h2>Doors</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-2" name="ui_door" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-4" name="ui_door" value="4"/>
+		<label for="radio-bhk-4">4</label>
+	</div>
+	</form>
+<form class="form">
+	
+	
+<div>
+<h2>Manufacturer</h2>
+<select class="location" name="ui_manufacturer" id="manufacturer">
+<option value="" disabled="disabled" selected="selected">Manufacturer</option>
+<option>ACURA</option>
+<option>ALFA ROMEO</option>
+<option>AUDI</option>
+</select>
+</div>
+<div>
+<h2>Model</h2>
+<select class="location" name="ui_model" id="model">
+<option value="" disabled="disabled" selected="selected">Model</option>
+<option>09-Mar</option>
+<option>100</option>
+<option>100 NX</option>
+</select>
+</div>
+<div>
+	<h2>Category</h2>
+<select class="location" name="ui_category" id="category">
+<option value="" disabled="disabled" selected="selected">Category</option>
+<option>Cabriolet</option>
+<option>Coupe</option>
+</select>
+</div>
+<div>
+	<h2>Leather interior</h2>
+<select class="location" name="ui_leather_interior" id="leather_interior">
+<option value="" disabled="disabled" selected="selected">Leather interior</option>
+<option>No</option>
+</select>
+</div>
+<div>
+	<h2>Fuel type</h2>
+<select class="location" name="ui_fuel_type" id="fuel_type">
+<option value="" disabled="disabled" selected="selected">Fuel type</option>
+<option>CNG</option>
+</select>
+</div>
+<div>
+	<h2>Gearbox type</h2>
+<select class="location" name="ui_gearbox_type" id="gearbox_type">
+<option value="" disabled="disabled" selected="selected">Gearbox type</option>
+</select>
+</div>
+<div>
+	<h2>Driver wheels</h2>
+<select class="location" name="ui_driver_wheels" id="driver_wheels">
+<option value="" disabled="disabled" selected="selected">Driver wheels</option>
+</select>
+</div>
+<div>
+	<h2>Wheel</h2>
+<select class="location" name="ui_wheel" id="wheel">
+<option value="" disabled="disabled" selected="selected">Wheel</option>
+</select>
+</div>
+<div>
+	<h2>Color</h2>
+<select class="location" name="ui_color" id="color">
+<option value="" disabled="disabled" selected="selected">Color</option>
+</select>
+</div>
+
+
+
+  
+
+
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+</body>
+</html>
